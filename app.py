@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-import openai
 import os
 from flask_cors import CORS
 
@@ -15,6 +14,10 @@ app = Flask(__name__)
 CORS(app)
 
 # Set up environment variables (replace these with your actual keys)
+
+@app.route('/', methods=['GET'])
+def server_status():
+    return jsonify({'status': "running"})
 
 
 @app.route('/answer', methods=['POST'])
