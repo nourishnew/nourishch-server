@@ -1,6 +1,9 @@
 Flask
 openai
 flask-cors
+Flask-Cors
 pinecone-client
 langchain
 gunicorn
+langchain-openai
+langchain-pinecone
