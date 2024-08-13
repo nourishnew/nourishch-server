@@ -3,3 +3,4 @@ openai
 flask-cors
 pinecone-client
 langchain
+gunicorn
