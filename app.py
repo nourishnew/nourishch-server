@@ -26,7 +26,7 @@ def answer():
     query = data.get('query')
     print("query is")
     print(query)
-    index_name= "nourishch"
+    index_name= "nourishch-vectors"
     model_name = 'text-embedding-ada-002'
     print(os.environ["OPENAI_API_KEY"])
     print(os.environ["PINECONE_API_KEY"])
